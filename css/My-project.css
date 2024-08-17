@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1F1F5;
+}
+
+.navbar {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.navbar .navbar-brand {
+  color: #fff;
+  padding: 8px 0;
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "Merriweather", serif;
+}
+.navbar .navbar-toggler {
+  background-color: #FB6C45 !important;
+}
+.navbar .navbar-toggler span {
+  color: #fff !important;
+}
+.navbar .nav-link {
+  color: #000;
+  padding: 15px 0;
+  margin-right: 20px;
+  font-size: 14px;
+  font-family: "Merriweather", serif;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar .nav-link:hover {
+  color: #FB6C45;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+.navbar .nav-link .user {
+  color: #FB6C45;
+  font-size: 18px;
+}
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.navbar .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background-color: #000;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px 0 30px;
+  font-family: "Cairo", sans-serif;
+}
+.navbar .dropdown .dropdown-content a {
+  font-family: "Cairo", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 0;
+  display: block;
+  border-bottom: solid 1px #FB6C45;
+  margin: 0px 30px;
+}
+.navbar .dropdown .dropdown-content a:hover {
+  color: #FB6C45;
+}
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar .dropdown-language {
+  position: relative;
+  display: inline-block;
+}
+.navbar .dropdown-language .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 200px;
+  background-color: #000;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px 0 30px;
+  font-family: "Cairo", sans-serif;
+}
+.navbar .dropdown-language .dropdown-content img {
+  margin-right: 10px;
+}
+.navbar .dropdown-language .dropdown-content a {
+  font-family: "Cairo", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 10px 0;
+  display: block;
+  border-bottom: solid 1px #FB6C45;
+  margin: 0px 30px;
+}
+.navbar .dropdown-language .dropdown-content a:hover {
+  color: #FB6C45;
+}
+.navbar .dropdown-language:hover .dropdown-content {
+  display: block;
+}
+
+.toTop {
+  background-color: #FB6C45;
+  color: #fff;
+  padding: 7px 16px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: 1px #FB6C45 solid;
+  border-radius: 5px;
+  z-index: 10;
+}
+.toTop i {
+  font-size: 15px;
+}
+
+.whatsapp {
+  background-color: #000;
+  color: #00CC83;
+  padding: 7px 12px;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  cursor: pointer;
+  border: 1px #000 solid;
+  border-radius: 5px;
+  z-index: 10;
+}
+.whatsapp i {
+  font-size: 25px;
+}
+
+.projects .search {
+  margin-bottom: 40px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.projects .search .project-select .radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  width: 400px;
+  font-size: 14px;
+}
+.projects .search .project-select .radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+.projects .search .project-select .radio-inputs .radio input {
+  display: none;
+}
+.projects .search .project-select .radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  font-family: Regular 400;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 0;
+  color: #000;
+  font-size: 15px;
+  transition: all 0.15s ease-in-out;
+  font-weight: bold;
+}
+.projects .search .project-select .radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  color: #FB6C45;
+  font-weight: 600;
+}
+.projects .search .search-group {
+  display: flex;
+  justify-content: flex-end;
+}
+.projects .search .search-group input {
+  padding: 5px 15px;
+  border: solid 1px #FB6C45;
+}
+.projects .search .search-group input::-moz-placeholder {
+  color: #FB6C45;
+  font-size: 14px;
+}
+.projects .search .search-group input::placeholder {
+  color: #FB6C45;
+  font-size: 14px;
+}
+.projects .search .search-group button {
+  position: relative;
+  padding: 10px 30px;
+  border: 1px solid #FB6C45;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: #FB6C45;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  transition: all 0.2s ease-in;
+}
+.projects .search .search-group button:hover {
+  background: #FB6C45;
+  box-shadow: 0 0 10px 2px #FB6C45;
+  transition: all 0.2s ease-out;
+  color: #fff;
+}
+.projects .search .search-group button:hover::before {
+  animation: sh02 0.5s 0s linear;
+}
+.projects .search .search-group button::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg);
+}
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+.projects .search .search-group button:active {
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+.projects img {
+  width: 100%;
+}
+.projects .project-data {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+.projects .project-data .project-image {
+  position: relative;
+}
+.projects .project-data .project-image img {
+  width: 100%;
+}
+.projects .project-data .project-image i {
+  display: none;
+}
+.projects .project-data:hover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #000;
+  opacity: 0.6;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.projects .project-data:hover i {
+  display: block;
+  font-size: 35px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  z-index: 2;
+  cursor: pointer;
+}
+.projects .project-data h3 {
+  font-weight: bold;
+  padding: 25px 0 0;
+  color: #FB6C45;
+  font-size: 25px;
+  font-family: Regular 400;
+}
+.projects .project-data h3 span {
+  padding-left: 3px;
+  letter-spacing: 3px;
+  padding-right: 5px;
+}
+.projects .project-data p {
+  font-weight: bold;
+  color: #000;
+  padding-top: 7px;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer .icon {
+  border-bottom: solid 2px #FB6C45;
+}
+footer a {
+  text-decoration: none;
+}
+footer i {
+  color: #FB6C45;
+}
+footer i:hover {
+  color: #fff;
+}/*# sourceMappingURL=My-project.css.map */
